@@ -1,5 +1,6 @@
 import React from 'react';
 import "./NavBar.css";
+import {Link} from 'react-router-dom';
 
 //Arrow Function
 const NavBar = () => {
@@ -7,19 +8,19 @@ const NavBar = () => {
     return (
         <div className="NavBar">
         <div>
-            Inicio
+           <Link to="/dashboard">dashboard</Link>
         </div>
     
         <div>
-            Tienda
+        <Link to="/store">store</Link>
         </div>
         <div>
-            Manga
+        <Link to="/styles">Styles</Link>
         </div>
         <div>
-            Reseñas
+        <Link to="/Reviews">Reviews</Link>
         </div>
         </div>
-    )
+    );
 }
 export default NavBar;
